@@ -1,227 +1,1012 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
-
-
-
-
-    <!--Fonts-->
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet" />
-
-    <link rel="stylesheet" href="style.css" />
-
-    <title>Fatiwin</title>
-  </head>
-  <body>
-    <nav>
-      <div class="logo">
-      <h2>Fatihwin</h2>
-    </div>
-
-<ul>
-<li><a href="#">Home</a></li>
-<li><a href="#">About</a></li>
-<li><a href="#">Portfolio</a></li>
-<li><a href="#">Contact</a></li>
-</ul>
-<div class="menu-bars">
-  <input type="checkbox">
-<span></span>
-<span></span>
-<span></span>
-</div>
-</nav>
-
-
-<section class="review" id="review">
-  <h1 class="heading">reviews <span>what people says</span></h1>
-
-  <div class="swiper review-slider">
-      <div class="swiper-wrapper">
-          <div class="swiper-slide box">
-              <i class="fas fa-quote-left"></i>
-              <i class="fas fa-quote-right"></i>
-              <img src="image/pic-1.png" alt="">
-              <div class="stars">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-              </div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, earum quis dolorem quaerat tenetur
-                  illum.</p>
-              <h3>john deo</h3>
-              <span>satisfied client</span>
-          </div>
-
-          <div class="swiper-slide box">
-              <i class="fas fa-quote-left"></i>
-              <i class="fas fa-quote-right"></i>
-              <img src="image/pic-2.png" alt="">
-              <div class="stars">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-              </div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum optio quasi ut, illo ipsam
-                  assumenda.</p>
-              <h3>john deo</h3>
-              <span>satisfied client</span>
-          </div>
-
-          <div class="swiper-slide box">
-              <i class="fas fa-quote-left"></i>
-              <i class="fas fa-quote-right"></i>
-              <img src="image/pic-3.png" alt="">
-              <div class="stars">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-              </div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius asperiores aliquam hic quis!
-                  Eligendi, aliquam.</p>
-              <h3>john deo</h3>
-              <span>satisfied client</span>
-          </div>
-
-          <div class="swiper-slide box">
-              <i class="fas fa-quote-left"></i>
-              <i class="fas fa-quote-right"></i>
-              <img src="image/pic-4.png" alt="">
-              <div class="stars">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-              </div>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi modi perspiciatis distinctio
-                  velit aliquid a.</p>
-              <h3>john deo</h3>
-              <span>satisfied client</span>
-          </div>
-      </div>
-      <div class="swiper-pagination"></div>
-  </div>
-</section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Footer | Abdullah </title>
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
-    <!-- stylesheet -->
-    <link rel="stylesheet" href="footer.css">
-
-    <!--FONT AWESOME-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <!--GOOGLE FONTS-->
+    <!-- Font Awesome CDN Link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
 
-</head>
-<body>    
-    <!--footer-->
+    <title>FLEXBOX NAV</title>
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background: #b2967d;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+.logo {
+  cursor: pointer;
+  padding: 0 1rem;
+  border-radius: 50%;
+}
+.toggle {
+  cursor: pointer;
+  padding: 25px 20px;
+  position: relative;
+}
+nav {
+  flex: 1 1 100%;
+}
+nav ul {
+  list-style: none;
+}
+#mobile-icon,
+[id^="submenu"] {
+  display: none;
+}
+nav a,
+nav label {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #f6f7f8;
+  background: #254441;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  height: 64px;
+  transition: background 0.4s ease-out;
+}
+nav a:hover,
+nav label:hover {
+  background: #305753;
+}
+.arrow {
+  margin-left: 9px;
+  margin-top: 4px;
+  color: #eee;
+  font-size: 10px;
+}
+section:nth-of-type(1) {
+  padding-top: 6rem;
+}
+/*------- mobile nav --------*/
+@media (max-width: 767px) {
+  nav ul {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+  }
+  #mobile-icon:checked ~ nav > ul {
+    max-height: 100vh;
+  }
+  .nav-items ul {
+    padding-left: 1rem;
+  }
+  [id^="submenu"]:checked ~ [class^="submenu"] {
+    max-height: 100vh;
+    overflow: visible;
+  }
+
+  .hamburger-icon {
+    width: 18px;
+    height: 3px;
+    background-color: black;
+    display: block;
+    position: relative;
+  }
+  .hamburger-icon:before,
+  .hamburger-icon:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: black;
+    transition: all 0.2s;
+  }
+  .hamburger-icon:before {
+    top: 5px;
+  }
+  .hamburger-icon:after {
+    top: -5px;
+  }
+  #mobile-icon:checked ~ .toggle {
+    border-radius: 50em;
+    transition: all 0.2s ease-out;
+  }
+
+  /* mobile nav change hamburger to x on click */
+  #mobile-icon:checked ~ .toggle .hamburger-icon {
+    background-color: transparent;
+  }
+  #mobile-icon:checked ~ .toggle .hamburger-icon:before {
+    top: 0;
+    transform: rotate(45deg);
+  }
+  #mobile-icon:checked ~ .toggle .hamburger-icon:after {
+    top: 0;
+    transform: rotate(-45deg);
+  }
+  .hide-mobile {
+    display: none;
+  }
+}
+/*-------desktop nav --------*/
+@media (min-width: 768px) {
+  header {
+    flex-wrap: nowrap;
+  }
+  nav,
+  .logo {
+    flex: none;
+  }
+  .toggle,
+  nav label {
+    display: none;
+  }
+  nav ul {
+    display: flex;
+  }
+  nav li {
+    position: relative;
+  }
+  nav ul ul {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  li:hover > ul {
+    max-height: 100vh;
+    overflow: visible;
+  }
+  [class^="submenu"] {
+    flex-direction: column;
+    position: absolute;
+  }
+  .submenu-1,
+  .submenu-3 {
+    width: 140px;
+    left: 0;
+  }
+  .submenu-2 {
+    top: 0px;
+    left: 100%;
+    width: 120px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root {
+    --main-color: #443;
+    --border-radius: 95% 4% 97% 5% / 4% 94% 3% 95%;
+    --border-radius-hover: 4% 95% 6% 95% / 95% 4% 92% 5%;
+    --border: .2rem solid var(--main-color);
+    --border-hover: .2rem dashed var(--main-color);
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+
+
+.heading {
+    font-size: 9rem;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: .05rem var(--main-color);
+    letter-spacing: .2rem;
+    text-align: center;
+    pointer-events: none;
+    position: relative;
+}
+
+.heading span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    color: var(--main-color);
+    font-size: 3rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: .9rem 1.5rem;
+    border: var(--border);
+    border-radius: var(--border-radius);
+    color: var(--main-color);
+    background: none;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 1.7rem;
+}
+
+.btn:hover {
+    border-radius: var(--border-radius-hover);
+    border: var(--border-hover);
+}
+
+
+.review .review-slider {
+    padding: 7rem 0;
+}
+
+.review .review-slider .box {
+    border: var(--border);
+    border-radius: var(--border-radius);
+    text-align: center;
+    position: relative;
+    z-index: 0;
+    padding: 2rem;
+}
+
+.review .review-slider .box .fa-quote-left {
+    position: absolute;
+    top: 2rem;
+    left: 2.5rem;
+    font-size: 6rem;
+    color: #ccc;
+    z-index: -1;
+}
+
+.review .review-slider .box .fa-quote-right {
+    position: absolute;
+    bottom: 2rem;
+    right: 2.5rem;
+    font-size: 6rem;
+    color: #ccc;
+    z-index: -1;
+}
+
+.review .review-slider .box:hover .fa-quote-left {
+    top: -6.5rem;
+}
+
+.review .review-slider .box:hover .fa-quote-right {
+    bottom: -6.5rem;
+}
+
+.review .review-slider .box img {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    margin-bottom: .7rem;
+}
+
+.review .review-slider .box .stars {
+    padding: .5rem 0
+}
+
+.review .review-slider .box .stars i {
+    font-size: 1.7rem;
+    color: var(--main-color);
+}
+
+.review .review-slider .box p {
+    font-size: 1.6rem;
+    color: var(--main-color);
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
+.review .review-slider .box h3 {
+    font-size: 2.2rem;
+    color: var(--main-color);
+    line-height: 1.8;
+}
+
+.review .review-slider .box span {
+    font-size: 1.5rem;
+    color: var(--main-color);
+}
+
+.swiper-pagination-bullet {
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 0;
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--main-color);
+}
+
+
+
+
+
+:root{
+    --white:#FFF;
+    --black:#000;
+    --dark:#1E1E1E;
+    --gray:rgba(1,1,1,0.6);
+    --lite:black;
+    --primary:#002347;
+    --secondary:#fdc632;
+}
+
+
+/***************************
+            DEFAULT
+****************************/
+body{
+    margin:0;
+    padding: 0;
+    overflow-x:hidden !important;
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration:none !important;
+    min-width: fit-content;
+    width: fit-content;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+}
+
+a, button{
+    transition:0.5s;
+}
+
+a, p{
+    font-size:14px;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color:var(--primary);
+    font-weight:600;
+}
+
+a, button, input, textarea, select{
+    outline:none !important;
+}
+
+fieldset{
+    border:0;
+}
+
+.title{
+    color:var(--primary);
+}
+
+.flex, .fixed_flex{
+    display:flex;
+}
+
+.flex-content{
+    width:100%;
+    position:relative;
+}
+
+.padding_1x{
+    padding:1rem;
+}
+
+.padding_2x{
+    padding:2rem;
+}
+
+.padding_3x{
+    padding:3rem;
+}
+
+.padding_4x{
+    /* padding:4rem; */
+   background-color:#e7d8c9;
+    width: 100%;
+    height: 100%;
+    top: 402px;
+}
+
+.btn{
+    padding:0.8rem 2rem;
+    border-radius:5px;
+    text-align:center;
+    font-weight:500;
+    text-transform:uppercase;
+}
+
+.btn_1{
+    border:1px solid var(--primary);
+    background-color:var(--primary);
+    color:var(--secondary);
+}
+
+.btn_1:hover{
+    background-color:transparent;
+    color:var(--primary);
+}
+
+.btn_2{
+    border:1px solid var(--secondary);
+    background-color:var(--secondary);
+    color:var(--primary);
+}
+
+.btn_2:hover{
+    border:1px solid var(--primary);
+    background-color:var(--primary);
+    color:var(--secondary);
+}
+
+@media (max-width:920px){
+    .flex{
+        flex-wrap:wrap;
+    }
+    
+    .padding_1x, .padding_2x, .padding_3x, .padding_4x{
+        padding:1rem;
+    }
+  
+    .btn{
+        padding:0.5rem 1rem;
+    }
+    
+    a, p{
+        font-size:12px;
+    }
+}
+
+
+    footer{
+    background-color:var(--primary);
+    color:var(--lite);
+}
+
+footer h3{
+    color:var(--white);
+    margin-bottom:1.5rem;
+}
+
+footer a{
+    color:var(--lite);
+    display:block;
+    margin:15px 0;
+}
+
+footer a:hover{
+    color:#7525d0;
+
+}
+
+footer fieldset{
+    padding:0;
+}
+
+footer fieldset input{
+    background-color:#334f6c;
+    border:0;
+    color:var(--lite);
+    padding:1rem;
+}
+
+footer fieldset .btn{
+    border-radius:0;
+    border:0;
+}
+
+footer fieldset .btn_2:hover{
+    background-color:var(--secondary);
+    border:0;
+    color:var(--primary);
+}
+
+footer .flex:last-child{
+    align-items:center;
+}
+
+footer .flex:last-child .flex-content:last-child{
+    text-align:right;
+}
+
+footer .flex:last-child p{
+    color:var(--white);
+}
+
+footer .flex:last-child a{
+    width:40px;
+    display:inline-block;
+    background-color:#334f6c;
+    color:var(--white);
+    padding:0.5rem;
+    margin-right:3px;
+    text-align:center;
+}
+
+footer .flex:last-child a:hover{
+    background-color:var(--secondary);
+    color:var(--gray);
+}
+
+@media (max-width:1100px){
+    footer .flex:first-child{
+        flex-wrap:wrap;
+    }
+    
+    footer .flex:first-child .flex-content{
+        flex: 1 1 40%;
+    }
+}
+
+@media (max-width:920px){
+    footer .flex:last-child .flex-content:last-child{
+        text-align:left;
+    }
+}
+
+@media (max-width:320px){
+    footer .flex:first-child .flex-content{
+        flex:1 1 100%;
+    }
+}
+
+
+
+/*bread */
+
+body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f8f8f8; /* Light gray background */
+      color: #333; /* Dark text color */
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    header {
+      background-color: #b2967d; /* Coffee-colored background for the header */
+      color: #fff; /* White text color */
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2em;
+      margin: 0;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin: 10px 0;
+    }
+
+
+
+
+
+
+
+
+
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f8f8f8; /* Light gray background */
+      color: #333; /* Dark text color */
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .bread-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 20px;
+      background-color: #e7d8c9;
+    }
+
+    .bread-card {
+      width: 300px;
+      margin: 20px;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background-color: #eee4e1;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .bread-card:hover {
+      transform: scale(1.05); /* Increase size on hover */
+    }
+
+    .bread-title {
+      font-size: 1.5em;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .bread-description {
+      font-size: 1em;
+      color: #666;
+    }
+body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f8f8f8; /* Light gray background */
+      color: #333; /* Dark text color */
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    header {
+      background-color: #b2967d; /* Coffee-colored background for the header */
+      color: #fff; /* White text color */
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2em;
+      margin: 0;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin: 10px 0;
+    }
+
+
+
+    body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif; /* You can use a different font if needed */
+  background-color: #f5f5f5; /* Light background color */
+}
+
+.cheese-item {
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  background-color: #e6beae; /* White background color */
+}
+
+.cheese-item:hover {
+  transform: scale(1.05);
+}
+
+.cheese-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.cheese-item h2 {
+  color: #673ab7; 
+}
+
+.cheese-item p {
+  color: #757575; 
+  font-size: 1.1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+  </style>
+  <body>
+    <!-- navbar -->
+    <header>
+      <img class="logo" src="logo.png" alt="" style="width:100px;height:50px;">
+      <input type="checkbox" id="mobile-icon">
+      <label for="mobile-icon" class="toggle"><span class="hamburger-icon"></span></label>
+      <nav>
+        <ul class="nav-items" >
+          <li>
+            <a href="#"  style="background-color:mistyrose;color:black;width:100px;height: 40px;">Home</a>
+          </li>
+          <li>
+            <a class="hide-mobile" href="#" style="background-color:#eee4e1;color:black;width:100px;height: 40px;">Workshop<span class="arrow">&#x25bc;</span></a>
+            <label for="submenu"><span class="arrow" style="font-size: 15px;">Contact Us</span></label>
+            <input id="submenu" type="checkbox">
+            <ul class="submenu-1">
+              
+                 
+                  <input id="submenu-2" type="checkbox">
+                  <ul class="submenu-2">
+                   
+                  </ul>
+                </li>
+            </ul>
+          </li>
+          <li><a href="#" style="background-color:#eee4e1;color:black;width:100px;height: 40px;">Gallery</a></li>
+          <li>
+            <a class="hide-mobile" href="#" style="background-color:#eee4e1;color:black;width:100px;height: 40px;">Contact<span class="arrow"></span></a>
+            <label for="submenu-3" ><span class="arrow" style="font-size:15px;">Workshop</span></label>
+            <input id="submenu-3" type="checkbox">
+              <ul class="submenu-3">
+                 
+              </ul>
+          </li>
+          <li><a href="#" style="background-color:#eee4e1;color:black;width:100px;height: 40px;">About Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+
+        <!-- hero -->
+
+        <section>
+            <div style="width:100%;height: 600px;border:2px solid rgb(255, 255, 255);background-color: #EEE4E1;background-image:url('top.jpg'); opacity:0.77;">
+              <h1 style="text-align: center;margin-top:200px;font-size: 50px;color:#040b42;"><b style="opacity:1;">Welcome to Koe The cafe</b></h1>
+                
+<button style="margin-left:43.5%;width:200px;height:50px;border-radius: 5px 5px 5px 5px;background-color:rgb(222, 164, 135);cursor:pointer;">Explore Our Cofee</button>
+            </div>
+           
+        </section>
+
+<br>
+<br>
+
+
+        <!-- video -->
+        
+        <section>
+            <div style="width:100%;height: 500px;">
+                <video width="100%" height="500px" controls muted autoplay>
+                    <source src="My Movie 4.mov" type="video/mp4">
+                </video>
+
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+<br>
+<br>
+<h1 class="heading" style="color:#e6beae">Bread heaven <span>What We Offer</span></h1>
+    
+  </header>
+<!-- bread -->
+
+<div class="bread-container">
+    <!-- Sourdough -->
+    <div class="bread-card">
+      <div class="bread-title">Sourdough</div>
+      <div class="bread-description">Fermented with naturally occurring wild yeast.</div>
+    </div>
+
+    <!-- Baguette -->
+    <div class="bread-card">
+      <div class="bread-title">Baguette</div>
+      <div class="bread-description">A long, thin French bread with a crispy crust.</div>
+    </div>
+
+    <!-- Ciabatta -->
+    <div class="bread-card">
+      <div class="bread-title">Ciabatta</div>
+      <div class="bread-description">An Italian bread known for its chewy texture and porous interior.</div>
+    </div>
+
+    <!-- Focaccia -->
+    <div class="bread-card">
+      <div class="bread-title">Focaccia</div>
+      <div class="bread-description">An Italian flatbread often topped with herbs and olive oil.</div>
+    </div>
+
+    <!-- Whole Wheat -->
+    <div class="bread-card">
+      <div class="bread-title">Whole Wheat</div>
+      <div class="bread-description">Made with whole wheat flour, offering a nuttier taste and more nutrients.</div>
+    </div>
+
+    <!-- Brioche -->
+    <div class="bread-card">
+      <div class="bread-title">Brioche</div>
+      <div class="bread-description">A rich, sweet bread enriched with butter.</div>
+    </div>
+
+    <!-- Croissants -->
+    <div class="bread-card">
+      <div class="bread-title">Croissants</div>
+      <div class="bread-description">Flaky and buttery French pastry. Enjoy plain or filled with ingredients like chocolate, almond paste, and cheese.</div>
+    </div>
+
+    <!-- Pita -->
+    <div class="bread-card">
+      <div class="bread-title">Pita</div>
+      <div class="bread-description">A round, pocketed flatbread, common in Middle Eastern cuisine.</div>
+    </div>
+  </div>
+
+<br>
+<br>
+
+<div class="cheese-item">
+    <img src="i2.jpg" alt="Baby Burrata">
+    <h2>Baby Burrata</h2>
+    <p>A small, fresh Italian cheese made from mozzarella and cream. It has a soft, creamy center encased in a delicate outer shell.</p>
+  </div>
+
+  <div class="cheese-item">
+    <img src="i1.jpeg" alt="Cherry Broccolini">
+    <h2>Cherry Broccolini</h2>
+    <p>While "Cherry Broccolini" is not a standard cheese, if you meant a specific cheese related to cherry and broccolini flavors, it might be a unique or local variation.</p>
+  </div>
+
+  <div class="cheese-item">
+    <img src="1x.webp" alt="Buffalo Mozzarella">
+    <h2>Buffalo Mozzarella</h2>
+    <p>A soft, moist Italian cheese made from buffalo milk. It has a delicate, milky flavor and is often used in salads or paired with tomatoes.</p>
+  </div>
+
+
+
+
+<!-- review -->
+        <section class="review" id="review">
+            <h1 class="heading" style="color:#e6beae">Testimonials <span>what people say</span></h1>
+    
+            <div class="swiper review-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide box">
+                        <i class="fas fa-quote-left"></i>
+                        <i class="fas fa-quote-right"></i>
+                        
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>The staff here is incredibly helpful. From the moment I walked in, they went out of their way to make me feel welcome and ensure I had everything I needed. Their knowledge of the menu and their willingness to offer recommendations made my visit even more enjoyable.</p>
+                        <h3>Gurmehar Singh Virk</h3>
+                        <span>satisfied client</span>
+                    </div>
+    
+                    <div class="swiper-slide box">
+                        <i class="fas fa-quote-left"></i>
+                        <i class="fas fa-quote-right"></i>
+                       
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>Quite honestly refreshing coffee and coffee mocktails! Love that they make everything from scratch, their pizza bases, pasta and coffee! Service and food on point. ✨</p>
+                        <h3>Mitali Semlani</h3>
+                        <span>satisfied client</span>
+                    </div>
+    
+                    <div class="swiper-slide box">
+                        <i class="fas fa-quote-left"></i>
+                        <i class="fas fa-quote-right"></i>
+                       
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>One of the best place in vesu to vist and have a bite. Every single item on the menu is elegant and authentic must visit place and also their live music adds up to it love it . Need more locations of this around city</p>
+                        <h3>Rohan Shah</h3>
+                        <span>satisfied client</span>
+                    </div>
+    
+                    <div class="swiper-slide box">
+                        <i class="fas fa-quote-left"></i>
+                        <i class="fas fa-quote-right"></i>
+                        
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>Great Ambience; Amazing food.
+                            We needed something out of the menu, a little this and little that, the host “Dhruv” happily obliged. Do visit.</p>
+                        <h3>Anish Agarwal</h3>
+                        <span>satisfied client</span>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+    
+       
+    
+       <!--footer-->
 <footer class="padding_4x">
     <div class="flex">
       <section class="flex-content padding_1x">
-        <h3>Top Products</h3>
-        <a href="#">Managed Website</a>
-        <a href="#">Manage Reputation</a>
-        <a href="#">Power Tools</a>
-        <a href="#">Marketing Service</a>
+        
+     
       </section>
       <section class="flex-content padding_1x">
-        <h3>Quick Links</h3>
+        <h3 style="color:navy">Quick Links</h3>
         <a href="#">Jobs</a>
         <a href="#">Brand Assets</a>
         <a href="#">Investor Relations</a>
         <a href="#">Terms of Service</a>
       </section>
       <section class="flex-content padding_1x">
-        <h3>Features</h3>
+        <h3 style="color:navy">Features</h3>
         <a href="#">Jobs</a>
         <a href="#">Brand Assets</a>
         <a href="#">Investor Relations</a>
         <a href="#">Terms of Service</a>
       </section>
       <section class="flex-content padding_1x">
-        <h3>Resources</h3>
+        <h3 style="color:navy">Resources</h3>
         <a href="#">Guides</a>
         <a href="#">Research</a>
         <a href="#">Experts</a>
         <a href="#">Agencies</a>
       </section>
-      <section class="flex-content padding_1x">
-        <h3>Newsletter</h3>
-        <p>You can trust us. we only send promo offers,</p>
-        <fieldset class="fixed_flex">
-          <input type="email" name="newsletter" placeholder="Your Email Address">
-          <button class="btn btn_2">Subscribe</button>
-        </fieldset>
-      </section>
+      
     </div>
     <div class="flex">
       <section class="flex-content padding_1x">
-        <p>Copyright ©2023 All rights reserved || Abdullah</p>
+        <p style="color:rgb(35, 10, 48);">Copyright ©2023 All rights reserved</p>
       </section>
       <section class="flex-content padding_1x">
         <a href="#"><i class="fa fa-facebook"></i></a>
@@ -232,10 +1017,46 @@
     </div>
   </footer>
 
-</body>
-</html>
-    
 
-<script src="app.js"></script>
-  </body>
-</html>
+
+
+
+
+
+
+
+
+     <!-- SWIPER -->
+     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+     <!-- Custom JS File Link  -->
+     <script >
+     
+         var swiper = new Swiper(".review-slider", {
+             spaceBetween: 20,
+             pagination: {
+                 el: ".swiper-pagination",
+                 clickable: true,
+             },
+             loop: true,
+             grabCursor: true,
+             autoplay: {
+                 delay: 7500,
+                 disableOnInteraction: false,
+             },
+             breakpoints: {
+                 0: {
+                     slidesPerView: 1
+                 },
+                 768: {
+                     slidesPerView: 2
+                 }
+             },
+         });</script>
+ 
+    
+    
+    
+    
+    </body>
+    </html>
