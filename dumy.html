@@ -61,37 +61,62 @@
         margin: 20px;
         padding: 40px;
       }
+
+
+      .vimg {
+  --g: 4px;     /* the gap */
+  --b: 12px;    /* border thickness*/
+  --c: #669706; /* the color */
+  
+  
+  padding: calc(var(--g) + var(--b));
+  --_c: #0000 0 25%, var(--c) 0 50%;
+  --_g1: repeating-linear-gradient(90deg ,var(--_c)) repeat-x;
+  --_g2: repeating-linear-gradient(180deg,var(--_c)) repeat-y;
+  background:
+    var(--_g1) var(--_p, 25%) 0   ,var(--_g2) 0    var(--_p,125%),
+    var(--_g1) var(--_p,125%) 100%,var(--_g2) 100% var(--_p, 25%);
+  background-size: 200% var(--b),var(--b) 200%;
+  cursor: pointer;
+  filter: grayscale(50%);
+  transition: .3s;
+}
+img:hover {
+  --_p: 75%;
+  filter: grayscale(0%);
+}
+
     </style>
   </head>
   <body>
     <h1 class="fadeIn">Beautiful Photo Gallery</h1>
     <div class="gallery animate_animated animate_fadeIn">
       <div class="photo">
-        <img src="image1.webp" alt="Photo 1" />
+        <img src="image1.webp" alt="Photo 1" class="vimg" />
       </div>
       <div class="photo">
-        <img src="image2.webp" alt="Photo 2" />
+        <img src="image2.webp" alt="Photo 2" class="vimg" />
       </div>
       <div class="photo">
-        <img src="image9.jpeg" alt="Photo 3" />
+        <img src="image9.jpeg" alt="Photo 3" class="vimg" />
       </div>
       <div class="photo">
-        <img src="image8.jpeg" width="10%" alt="Photo 1" />
+        <img src="image8.jpeg" width="10%" alt="Photo 1" class="vimg" />
       </div>
       <div class="photo">
-        <img src="image5.jpeg" alt="Photo 2" />
+        <img src="image5.jpeg" alt="Photo 2" class="vimg" />
       </div>
       <div class="photo">
-        <img src="image6.jpeg" alt="Photo 3" />
+        <img src="image6.jpeg" alt="Photo 3" class="vimg" />
       </div>
       <div class="photo">
-        <img src="image7.jpeg" alt="Photo 1" />
+        <img src="image7.jpeg" alt="Photo 1" class="vimg" />
       </div>
       <div class="photo">
-        <img src="image4.jpeg" alt="Photo 2" />
+        <img src="image4.jpeg" alt="Photo 2" class="vimg" />
       </div>
       <div class="photo">
-        <img src="image4.jpeg" alt="Photo 3" />
+        <img src="image3.jpeg" alt="Photo 3" class="vimg" />
       </div>
       <!-- Add more photos as needed -->
     </div>
