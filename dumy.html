@@ -13,7 +13,7 @@
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
-        background-color: white;
+        background-color: rgb(255, 255, 255);
         color: #333;
       }
 
@@ -51,15 +51,6 @@
       /* Animation classes from animate.css */
       .fadeIn {
         animation: fadeIn 1s ease;
-      }
-
-      h1 {
-        text-align: center;
-        margin: 20px;
-        color: #2c3e50;
-        background-color: #b2967d;
-        margin: 20px;
-        padding: 40px;
       }
 
 
@@ -277,10 +268,32 @@ section:nth-of-type(1) {
 
 
 
+:root {
+  --443: #443; /* Define the custom property */
+}
 
 
 
+.heading {
+    font-size: 8rem;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: .05rem var(--443);
+    letter-spacing: .2rem;
+    text-align: center;
+    pointer-events: none;
+    position: relative;
+}
 
+.heading span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    color: var(--443);
+    font-size: 3rem;
+}
 
 
 
@@ -331,7 +344,11 @@ section:nth-of-type(1) {
       </nav>
     </header>
     <section>
-    <h1 class="fadeIn" style="font-family:cursive">Koe cafe captures</h1>
+      <section >
+
+        <p class="heading" style="color:#e6beae">Koe Cafe<span style="color:#443">captures</span></p>
+      
+    </section>
     <div class="gallery animate_animated animate_fadeIn">
       <div class="photo">
         <img src="image1.webp" alt="Photo 1" class="vimg" style="--c: #b2967d;"/>
@@ -340,13 +357,13 @@ section:nth-of-type(1) {
         <img src="image2.webp" alt="Photo 2" class="vimg" style="--c: #b2967d;"/>
       </div>
       <div class="photo">
-        <img src="image9.jpeg" alt="Photo 3" class="vimg" style="--c: #b2967d;" />
+        <img src="image9.webp" alt="Photo 3" class="vimg" style="--c: #b2967d;"/>
       </div>
       <div class="photo">
-        <img src="image8.jpeg" width="10%" alt="Photo 1" class="vimg" style="--c: #b2967d;" />
+        <img src="image8.jpeg" width="10%" alt="Photo 1" class="vimg" style="--c: #b2967d;"/>
       </div>
       <div class="photo">
-        <img src="image5.jpeg" alt="Photo 2" class="vimg"  style="--c: #b2967d;"/>
+        <img src="image5.jpeg" alt="Photo 2" class="vimg" style="--c: #b2967d;"/>
       </div>
       <div class="photo">
         <img src="image6.jpeg" alt="Photo 3" class="vimg" style="--c: #b2967d;"/>
