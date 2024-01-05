@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photo Gallery</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #e6beae;
+        color: #333;
+      }
+
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 20px;
+      }
+
+      .photo {
+        position: relative;
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        overflow: hidden;
+        margin: 10px;
+        border: 4px solid #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .photo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+      }
+
+      .photo:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+      }
+
+      /* Animation classes from animate.css */
+      .fadeIn {
+        animation: fadeIn 1s ease;
+      }
+
+      h1 {
+        text-align: center;
+        margin: 20px;
+        color: #2c3e50;
+        background-color: #b2967d;
+        margin: 20px;
+        padding: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="fadeIn">Beautiful Photo Gallery</h1>
+    <div class="gallery animate_animated animate_fadeIn">
+      <div class="photo">
+        <img src="image1.webp" alt="Photo 1" />
+      </div>
+      <div class="photo">
+        <img src="image2.webp" alt="Photo 2" />
+      </div>
+      <div class="photo">
+        <img src="image9.jpeg" alt="Photo 3" />
+      </div>
+      <div class="photo">
+        <img src="image8.jpeg" width="10%" alt="Photo 1" />
+      </div>
+      <div class="photo">
+        <img src="image5.jpeg" alt="Photo 2" />
+      </div>
+      <div class="photo">
+        <img src="image6.jpeg" alt="Photo 3" />
+      </div>
+      <div class="photo">
+        <img src="image7.jpeg" alt="Photo 1" />
+      </div>
+      <div class="photo">
+        <img src="image4.jpeg" alt="Photo 2" />
+      </div>
+      <div class="photo">
+        <img src="image4.jpeg" alt="Photo 3" />
+      </div>
+      <!-- Add more photos as needed -->
+    </div>
+  </body>
+</html>
