@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - KOE The Kafe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: #e7d8c9;
+            color: #958b81;
+            padding: 1em;
+            text-align: center;
+            transition: background-color 0.5s ease;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        h2{
+            text-align: center;
+            /* background-color: antiquewhite; */
+        }
+
+        header:hover,
+        header:focus {
+            background-color: #d1b18c;
+        }
+
+        .logo {
+            max-width: 100px;
+            height: auto;
+            margin-left: 20px;
+        }
+
+        .contact-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Align items to the start */
+            height: 100vh;
+            box-sizing: border-box;
+            overflow: hidden;
+            flex-wrap: wrap;
+            padding-top: 70px; /* Adjusted padding for the header */
+        }
+
+        .card {
+            width: 100vw;
+            height: calc(80vh - 35px);
+            perspective: 1000px;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+
+        .card:hover .card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .card-inner {
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: transform 0.5s;
+        }
+
+        .card-front,
+        .card-back {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            backface-visibility: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card-front img,
+        .card-back img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .card-front {
+            background-color: #eee;
+        }
+
+        .card-back {
+            background-color: #b2967d;
+            transform: rotateY(180deg);
+        }
+
+        .contact-text {
+            max-width: 80%;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        .map-section {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            box-sizing: border-box;
+            flex-wrap: wrap; /* Allow the items to wrap */
+        }
+
+        .map-welcome,
+        .map-location {
+            width: 60%;
+            padding: 20px;
+            box-sizing: border-box;
+            margin-bottom: 20px; /* Adjusted margin for better spacing */
+        }
+
+        .map-welcome {
+            background-color: #eee4e1;
+        }
+
+        .map-location {
+            background-color: #d1b18c;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        /* Animation classes from animate.css */
+        .fadeIn {
+            animation: fadeIn 1s ease;
+        }
+
+
+
+
+
+
+
+
+
+        .map-welcome {
+            background-color: #eee4e1;
+            overflow: hidden; /* Added overflow property to contain the content */
+        }
+
+        /* Adjusted map-location style */
+        .map-location {
+            width: 100%; /* Take up the full width */
+            padding: 20px;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+        }
+
+        /* Adjusted map-welcome h2 styles */
+        .map-welcome h2 {
+            margin-bottom: 10px; /* Add some bottom margin to create space between paragraphs */
+        }
+      
+      /* Your existing styles... */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #e7d8c9;
+    color: #958b81;
+    padding: 1em;
+    text-align: center;
+    transition: background-color 0.5s ease;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header:hover,
+header:focus {
+    background-color: #d1b18c;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column; /* Change from row to column */
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow-y: auto; /* Allow vertical scrolling */
+    padding-top: 70px; /* Adjusted padding for the header */
+}
+
+.card {
+    width: 100vw;
+    height: calc(80vh - 35px);
+    perspective: 1000px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.map-section {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Change from row to column */
+    align-items: center;
+}
+
+/* Your existing map-welcome and map-location styles... */
+
+/* Animation classes from animate.css */
+.fadeIn {
+    animation: fadeIn 1s ease;
+}
+
+    </style>
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+    <header class="animate__animated animate__fadeIn">
+        <img src="logo.jpg" alt="KOE The Kafe Logo" class="logo">
+        <h1>GET IN TOUCH WITH US!</h1>
+    </header>
+
+    <div class="contact-container animate__animated animate__fadeIn">
+        <div class="card" onclick="flipCard(this)">
+            <div class="card-inner">
+                <div class="card-front">
+                    <div class="contact-text">
+                        <img src="1.png" alt="Front Image">
+                    </div>
+                </div>
+                <div class="card-back">
+                    <div class="contact-text">
+                        <img src="2.png" alt="Back Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+          </div>
+        <div class="map-section">
+            <div class="map-welcome">
+                <h2 >Welcome to KOE The Kafe!</h2>
+                <h2>Experience the warmth and joy of our cafe. We can't wait to serve you!</h2>
+                <h2>Call us and come to see. We are always glad to meet new interesting people!</h2>
+            </div>
+            <div class="map-location" onclick="redirectToMap()">
+                <h2>Find Us on the Map</h2>
+                <!-- Corrected iframe syntax -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.2735432011254!2d72.7810363!3d21.1415096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be05327ccb9c45f%3A0xe73ce99228e97293!2sKOE%20-%20The%20Kafe!5e0!3m2!1sen!2sin!4v1704559919007!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+
+   
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var cards = document.querySelectorAll('.card');
+        cards.forEach(function (card) {
+            card.addEventListener('click', function () {
+                flipCard(this);
+            });
+        });
+    });
+
+    function flipCard(card) {
+        var cardInner = card.querySelector('.card-inner');
+        cardInner.style.transform = cardInner.style.transform === 'rotateY(180deg)' ? 'rotateY(0deg)' : 'rotateY(180deg)';
+    }
+
+    function redirectToMap() {
+        window.location.href = 'https://www.google.com/maps?q=KOE+The+Kafe';
+    }
+</script>
+
+</body>
+</html>
