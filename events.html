@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KOE Cafe Events</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e6beae;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        section {
+            padding: 50px;
+            text-align: center;
+        }
+        .intro {
+    font-size: 35px;
+    margin-bottom: 30px;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    display: inline-block;
+}
+
+.intro-text {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3s steps(40) 1s forwards, blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-right-color: black;
+    }
+    50% {
+        border-right-color: transparent;
+    }
+}
+
+        @keyframes blink-caret {
+            from,
+            to {
+                border-right-color: black;
+            }
+            50% {
+                border-right-color: transparent;
+            }
+        }
+
+        .event-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .event-card {
+            width: 300px;
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+            position: relative;
+        }
+
+        .event-card:hover {
+            transform: scale(1.05);
+        }
+
+        .event-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 2px solid #b2967d;
+            border-radius: 10px 10px 0 0; /* Added border-radius */
+        }
+
+        .event-details {
+            padding: 20px;
+        }
+
+        h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            position: relative;
+            cursor: pointer;
+        }
+
+        h2::before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #b2967d;
+            visibility: hidden;
+            transition: all 0.3s ease-in-out;
+        }
+
+        h2:hover::before {
+            width: 100%;
+            visibility: visible;
+        }
+
+        p {
+            font-size: 16px;
+            color: #555;
+        }
+
+        .extra-section {
+            margin-top: 50px;
+        }
+
+        .extra-heading {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+        .extra-image {
+    width: 100%;
+    max-width: 400px; /* Decreased max-width */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+        /* Animation classes from animate.css */
+        .fadeInUp {
+            animation: fadeInUp 1s ease;
+        }
+
+        .fadeIn {
+            animation: fadeIn 1s ease;
+        }
+
+        @media only screen and (max-width: 768px) {
+            h2 {
+                font-size: 18px;
+            }
+
+            .extra-heading {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="animate__animated animate__fadeIn">
+        <div class="intro">
+            <span class="intro-text">Welcome to KOE Cafe - Where Every Event is a Celebration!</span>
+            
+        </div>
+
+        <div class="event-container">
+            <div class="event-card fadeInUp">
+                <img class="event-image" src="0023.jpg" alt="Saturday Nights">
+                <div class="event-details">
+                    <h2>Saturday Nights</h2>
+                    <p>Enjoy live music and a vibrant atmosphere every Saturday night at KOE Cafe.</p>
+                </div>
+            </div>
+
+            <div class="event-card fadeInUp">
+                <img class="event-image" src="0021.jpg" alt="Poetry Night">
+                <div class="event-details">
+                    <h2>Poetry Night</h2>
+                    <p>Be captivated by the art of words and emotions during our poetry night.</p>
+                </div>
+            </div>
+
+            <div class="event-card fadeInUp">
+                <img class="event-image" src="0026.jpg" alt="Comedy Show">
+                <div class="event-details">
+                    <h2>Comedy Show</h2>
+                    <p>Laugh out loud with our hilarious comedians during our comedy nights.</p>
+                </div>
+            </div>
+
+            <div class="event-card fadeInUp">
+                <img class="event-image" src="0006.jpg" alt="Open Mic">
+                <div class="event-details">
+                    <h2>Open Mic</h2>
+                    <p>Showcase your talent or enjoy a variety of performances at our open mic events.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="extra-section fadeInUp">
+            <h2 class="extra-heading">Special Moments at KOE Cafe</h2>
+            <img class="extra-image" src="0010.jpg" alt="Extra Image">
+            <img class="extra-image" src="0014.jpg" alt="Extra Image">
+            <img class="extra-image" src="0022.jpg" alt="Extra Image">
+            <img class="extra-image" src="0005.jpg" alt="Extra Image">
+            <img class="extra-image" src="0007.jpg" alt="Extra Image">
+            <img class="extra-image" src="0024.jpg" alt="Extra Image">
+            
+        </div>
+    </section>
+
+</body>
+</html>
